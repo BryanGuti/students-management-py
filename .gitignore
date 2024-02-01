@@ -1,0 +1,8 @@
+# Environments
+
+venv/
+
+# Django
+
+**/*.pyc
+**/__pycache__/*
