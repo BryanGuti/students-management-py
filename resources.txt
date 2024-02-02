@@ -1,0 +1,4 @@
+Bootstrap, https://getbootstrap.com/docs/5.3/getting-started/introduction/
+Cdn fontawesome, https://cdnjs.com/libraries/font-awesome
+Fontawesome, https://fontawesome.com/
+Bootswatch, https://bootswatch.com/
