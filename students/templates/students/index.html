@@ -5,7 +5,7 @@
     <h3 class="text-center mb-4">Students</h3>
     <div class="card text-white bg-dark w-100">
       <div class="card-header bg-primary d-flex justify-content-between align-items-center">
-        <div class="">
+        <div>
           <i class="fa-solid fa-list"></i>
           Student Records
         </div>
@@ -92,6 +92,12 @@
                       </div>
                     </div>
                   </div>
+
+                  <a
+                  href="{% url 'edit_student' student.id %}"
+                  class="btn btn-outline-primary">
+                    <i class="fa-solid fa-pen-to-square fa-lg"></i>
+                  </a>
                 </td>
               </tr>
             {% endfor %}

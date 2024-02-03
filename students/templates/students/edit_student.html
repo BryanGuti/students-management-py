@@ -4,23 +4,23 @@
   <div class="container my-4 d-flex flex-column align-items-center">
     {% if success %}
     <div class="alert alert-success" role="alert">
-      The new student was added successfully
+      Student's information updated successfully
       <a href="{% url 'index' %}">Go to students list</a>
     </div>
     {% else %}
-    <h3 class="text-center mb-a">Create a new student</h3>
+    <h3 class="text-center mb-a">Update student</h3>
     <div class="card text-white bg-dark my-4 w-75"">
       <div class="card-header bg-primary">
         <div>
-          <i class="fa-solid fa-address-card fa-lg"></i>
-          Student registration
+          <i class="fa-solid fa-pen-to-square fa-lg"></i>
+          Update student's information
         </div>
       </div>
       <div class="card-body px-5">
-        <form action="{% url 'add_student' %}" method="POST">
+        <form action="" method="POST">
           {% csrf_token %}
           {{ form.as_p }}
-          <button type="submit" class="btn btn-primary me-2">Registrate</button>
+          <button type="submit" class="btn btn-primary me-2">Update</button>
           <a href="{% url 'index' %}" class="btn btn-secondary">Cancel</a>
         </form>
       </div>
