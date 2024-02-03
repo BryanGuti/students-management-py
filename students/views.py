@@ -60,6 +60,7 @@ def edit_student(request, id):
             form.save()
             return render(request, 'students/edit_student.html', {
                 'form': form,
+                'title': 'Update student',
                 'success': True
             })
     else:
@@ -67,7 +68,8 @@ def edit_student(request, id):
         form = StudentForm(instance=student)
 
     return render(request, 'students/edit_student.html', {
-        'form': form
+        'form': form,
+        'title': 'Update student'
     })
 
 
